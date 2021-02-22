@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 //     offset: curOffset
                 //   },
                 success: function (response) {
+                    const musicContainer = document.querySelector('.music-container');
+                    let musicHTML = renderSongs(response.tracks.items)
+                    musicContainer.innerHTML = musicHTML
                     // hasNext = (curOffset + limitPerPage) < response.tracks.total;
                     // hasPrev = (curOffset - limitPerPage) >= 0;
                     console.log(response)
@@ -43,23 +46,20 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+function renderSongs(songs) {
+    const musicHtmlArray = songs.map(function(currentSong){
+        return `<div class="result">
+            <div>${currentSong.name}</div>
+            <div>${currentSong.popularity}</div>
+            <div>${currentSong.artists[0].name}</div>
+            <a href="${currentSong.preview_url}">Click Here For a Preview</a>
+            </div>`
+        });
+        return musicHtmlArray.join('')
+        
+    }
 
 
 
 
 
-
-// const searchString = document.querySelector('.form-control.search-bar').value
-//          const urlEncodedSearchString = encodeURIComponent(searchString);
-//          console.log(urlEncodedSearchString)
-//          fetch("http://www.omdbapi.com/?apikey=59354c85&s=" + urlEncodedSearchString)
-//          .then(res => res.json())
-//          .then(data => {
-//             console.log(data.Search)
-//             const moviesContainer = document.querySelector('.movies-container');
-//             var movieHTML = renderMovies(data.Search)
-//             moviesContainer.innerHTML = movieHTML;
-//             movieData = data.Search
-//             })
-//     })
-// })
