@@ -7,9 +7,7 @@ h1 {
 
 
 body {
-  background-image: url("./Images/musicbgpink.jpeg");
-  background-size: cover;
-  
+  /* background-size: cover; */
 }
 .navbar {
   background-color: #fe436560;
@@ -104,18 +102,7 @@ h5{
   font-size: 18px;
 }
 
-/* button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-} */
+
 
 a {
   text-decoration: none;
@@ -138,3 +125,50 @@ button:hover, a:hover {
   color: whitesmoke;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+html,
+body {
+    height: 100%
+}
+
+* {
+    padding: 0px;
+    margin: 0px
+}
+
+body {
+    background-color: #a5a5b1;
+    display: grid;
+    place-items: center
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 50px;
+    color: #6f707d;
+    font-family: 'Marcellus', serif
+}
+
+#heading {
+    font-size: 55px;
+    color: #2b304d
+}
+
+.temp {
+    place-items: center
+}
+
+.temp-details>p>span,
+.grey {
+    color: #a3acc1;
+    font-size: 12px
+}
+
+.fa {
+    color: #a5a5b1
+}
+
+*:focus {
+    outline: none
+}
