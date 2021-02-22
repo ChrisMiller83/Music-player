@@ -1,0 +1,143 @@
+.navbar {
+  background-color: #fe436560; 
+  border-bottom: 5px solid pink;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: antiquewhite;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+h1 {
+  justify-content: center;
+  text-align: center;
+  color: black;
+  padding-top: 50px;
+}
+
+body {
+  background-image: url("./Images/computer_desk.jpeg");
+  background-size: cover;
+  
+}
+
+
+.personal_img {
+  min-width: 100%;
+  height: 250px;
+  object-fit: contain;  
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img-container {
+  width: 100%;
+  height: 250px;
+}
+.img-container img {
+  position: relative;
+  max-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: 25%; 
+  background-color: rgba(0, 0, 0, 0.2) ;
+  border: 10px solid rgba(0, 0, 0, 0.2);   
+  min-height: 50%;
+  min-width: 100%;
+  
+}
+
+.title {
+  color: pink;
+  font-size: 18px;
+}
+
+h2 {
+  color: antiquewhite;
+}
+
+h3{
+  color: antiquewhite;
+}
+
+p{
+  color: antiquewhite;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: antiquewhite;
+}
+
+button:hover, a:hover {
+  color: pink;
+}
+
+.contact_button {
+  background-color: #fe436560;
+  color: antiquewhite;
+  border-radius: 12px;
+  opacity: 0.9;
+}
+
+.contact_button:hover {
+  background-color: silver;
+  color: #fe436560;
+  opacity: 0.7;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa :hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+@media only screen and (min-width: 1000px) {
+  #cards {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;    
+  }
+}  
+
+
