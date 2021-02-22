@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderSongs(songs) {
     const musicHtmlArray = songs.map(function(currentSong){
         return `<div class="result">
+            <img src="${currentSong.album.images[0].url}" class="album-cover">
             <div>${currentSong.name}</div>
             <div>${currentSong.popularity}</div>
             <div>${currentSong.artists[0].name}</div>
