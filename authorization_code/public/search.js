@@ -29,3 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// const searchString = document.querySelector('.form-control.search-bar').value
+//          const urlEncodedSearchString = encodeURIComponent(searchString);
+//          console.log(urlEncodedSearchString)
+//          fetch("http://www.omdbapi.com/?apikey=59354c85&s=" + urlEncodedSearchString)
+//          .then(res => res.json())
+//          .then(data => {
+//             console.log(data.Search)
+//             const moviesContainer = document.querySelector('.movies-container');
+//             var movieHTML = renderMovies(data.Search)
+//             moviesContainer.innerHTML = movieHTML;
+//             movieData = data.Search
+//             })
+//     })
+// })
