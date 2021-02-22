@@ -1,9 +1,10 @@
 
+
 var curOffset = 0;
-var limitPerPage = 10;
+var limitPerPage = 1;
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById("form-control").addEventListener("click", function(e){
+    document.getElementById("search").addEventListener("click", function(e){
         e.preventDefault()
     const access_token = localStorage.getItem('access_token')
     console.log(access_token)
@@ -13,11 +14,21 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             //Start access to Spotify API
             $.ajax({
-                url: 'https://api.spotify.com/v1/search',
+                url: 'https://api.spotify.com/v1/search?q=Hello&type=track%2Cartist&market=US&limit=10&offset=5',
                 headers: {
-                    'Authorization': 'Bearer ' + access_token
+                    'Authorization': 'Bearer ' + access_token,
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
                 },
+                // data: {
+                //     q: query,
+                //     type: 'track',
+                //     limit: limitPerPage,
+                //     offset: curOffset
+                //   },
                 success: function (response) {
+                    // hasNext = (curOffset + limitPerPage) < response.tracks.total;
+                    // hasPrev = (curOffset - limitPerPage) >= 0;
                     console.log(response)
                     // response contains search data
                 }
@@ -26,6 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     })
 })
+
+
+
+
 
 
 
