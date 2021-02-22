@@ -3,10 +3,14 @@
 var curOffset = 0;
 var limitPerPage = 1;
 
+
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById("search").addEventListener("click", function(e){
         e.preventDefault()
     const access_token = localStorage.getItem('access_token')
+    const searchString = document.querySelector('.form-control').value
+    const urlEncodedSearchString = encodeURIComponent(searchString)
+    const searchedSong = 'q=' + urlEncodedSearchString + '&type=track%2Cartist&market=US&limit=10&offset=5'
     console.log(access_token)
         if (!access_token) {
             alert('Please Login again');
@@ -14,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             //Start access to Spotify API
             $.ajax({
-                url: 'https://api.spotify.com/v1/search?q=Hello&type=track%2Cartist&market=US&limit=10&offset=5',
+                
+                url: 'https://api.spotify.com/v1/search?' + searchedSong,
                 headers: {
                     'Authorization': 'Bearer ' + access_token,
                     "Accept": "application/json",
