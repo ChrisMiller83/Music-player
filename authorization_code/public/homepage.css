@@ -75,4 +75,11 @@ my-hidden {
 }
 .result{
   padding: 20px;
+  border: 2px solid black;
+  margin-bottom: 25px;
+}
+.album-cover{
+  width: auto;
+  height: auto;
+  margin: auto;
 }
