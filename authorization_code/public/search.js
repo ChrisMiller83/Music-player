@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 
 
-
+=======
+var curOffset = 0;
+var limitPerPage = 1;
+>>>>>>> 9446eb23eb6252d44c8c2eba6eb0ad02d1a8e6e0
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById("search").addEventListener("click", function(e){
@@ -22,6 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     "Accept": "application/json",
                     "Content-Type": "application/json"
                 },
+<<<<<<< HEAD
+=======
+
+                // data: {
+                //     q: query,
+                //     type: 'track',
+                //     limit: limitPerPage,
+                //     offset: curOffset
+                //   },
+
+>>>>>>> 9446eb23eb6252d44c8c2eba6eb0ad02d1a8e6e0
                 success: function (response) {
                     const musicContainer = document.querySelector('.music-container');
                     let musicHTML = renderSongs(response.tracks.items)
@@ -33,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     })
 })
+
 
 function renderSongs(songs) {
     const musicHtmlArray = songs.map(function(currentSong){
@@ -47,6 +63,8 @@ function renderSongs(songs) {
         return musicHtmlArray.join('')
         
     }
+
+
 
 
 
