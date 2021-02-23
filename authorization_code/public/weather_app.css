@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --bg_main: #0a1f44;
   --text_light: #fff;
   --text_med: #53627c;
@@ -6,11 +6,13 @@
   --red: #ff1e42;
   --darkred: #c3112d;
   --orange: #ff8c00;
-}
+} */
 body{
-  background-image: url(weatherpic.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: url(weatherpic.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .main-weather{
   position: absolute;
@@ -40,17 +42,17 @@ body{
   box-sizing: border-box;
   font-weight: normal;
 }
- 
+
 button {
   cursor: pointer;
 }
-  
+
 input {
   -webkit-appearance: none;
   width: 50%;
   position: relative;
 }
-  
+
 button {
   border: 5px solid pink;
   background-color: pink;
@@ -62,32 +64,35 @@ img {
   max-width: 100%;
   height: auto;
 }
- 
+
 ul {
   list-style: none;
 }
 .ajax-section {
   margin: 50px 0 20px;
 }
- 
+
 .ajax-section .cities {
   display: grid;
   grid-gap: 32px 20px;
   grid-template-columns: repeat(4, 1fr);
 }
- 
-@media screen and (max-width: 1000px) { 
+
+@media screen and (max-width: 1000px) {
+  body{
+    background-image: 10%;
+  } 
   .ajax-section .cities {
     grid-template-columns: repeat(3, 1fr);
   }
 }
- 
+
 @media screen and (max-width: 700px) {
   .ajax-section .cities {
     grid-template-columns: repeat(2, 1fr);
   }
 }
- 
+
 @media screen and (max-width: 500px) {  
   .ajax-section .cities {
     grid-template-columns: repeat(1, 1fr);
@@ -97,20 +102,33 @@ ul {
   .top-banner form {
     flex-direction: column;
   }
-   
+  
   .top-banner form input,
   .top-banner form button {
     width: 100%;
   }
- 
+  
   .top-banner form button {
     margin: 20px 0 0 0;
   }
-   
+  
   .top-banner form .msg {
     position: static;
     max-width: none;
     min-height: 0;
     margin-top: 10px;
   }
+}
+.navbar-brand{
+  color: black !important;
+
+}
+.nav-link{
+  color: black !important;
+}
+#navbarResponsive{
+  background-color: #aec6cf !important;
+}
+#navbarId{
+  background-color: #aec6cf !important;
 }
