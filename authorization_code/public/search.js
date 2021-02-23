@@ -1,8 +1,5 @@
-
-
 var curOffset = 0;
 var limitPerPage = 1;
-
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById("search").addEventListener("click", function(e){
@@ -25,12 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     "Accept": "application/json",
                     "Content-Type": "application/json"
                 },
+
                 // data: {
                 //     q: query,
                 //     type: 'track',
                 //     limit: limitPerPage,
                 //     offset: curOffset
                 //   },
+
                 success: function (response) {
                     const musicContainer = document.querySelector('.music-container');
                     let musicHTML = renderSongs(response.tracks.items)
@@ -46,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+
 function renderSongs(songs) {
     const musicHtmlArray = songs.map(function(currentSong){
         return `<div class="result">
@@ -59,6 +59,8 @@ function renderSongs(songs) {
         return musicHtmlArray.join('')
         
     }
+
+
 
 
 
