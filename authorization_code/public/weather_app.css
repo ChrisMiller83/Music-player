@@ -8,9 +8,11 @@
   --orange: #ff8c00;
 } */
 body{
-  background-image: url(weatherpic.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: url(weatherpic.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .main-weather{
   position: absolute;
@@ -76,7 +78,10 @@ ul {
   grid-template-columns: repeat(4, 1fr);
 }
 
-@media screen and (max-width: 1000px) { 
+@media screen and (max-width: 1000px) {
+  body{
+    background-image: 10%;
+  } 
   .ajax-section .cities {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -117,4 +122,13 @@ ul {
 .navbar-brand{
   color: black !important;
 
+}
+.nav-link{
+  color: black !important;
+}
+#navbarResponsive{
+  background-color: #aec6cf !important;
+}
+#navbarId{
+  background-color: #aec6cf !important;
 }
