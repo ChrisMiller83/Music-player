@@ -1,7 +1,5 @@
 
 
-var curOffset = 0;
-var limitPerPage = 1;
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Please Login again');
             return
         } else {
-            //Start access to Spotify API
             $.ajax({
                 
                 url: 'https://api.spotify.com/v1/search?' + searchedSong,
@@ -25,20 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     "Accept": "application/json",
                     "Content-Type": "application/json"
                 },
-                // data: {
-                //     q: query,
-                //     type: 'track',
-                //     limit: limitPerPage,
-                //     offset: curOffset
-                //   },
                 success: function (response) {
                     const musicContainer = document.querySelector('.music-container');
                     let musicHTML = renderSongs(response.tracks.items)
                     musicContainer.innerHTML = musicHTML
-                    // hasNext = (curOffset + limitPerPage) < response.tracks.total;
-                    // hasPrev = (curOffset - limitPerPage) >= 0;
                     console.log(response)
-                    // response contains search data
                 }
             });
         }
