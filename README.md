@@ -1,3 +1,27 @@
+# Project Team
+* Chris Miller [github](https://github.com/ChrisMiller83) [linkedIn](https://www.linkedin.com/in/chris-miller-0450a1aa/)
+* Tucker Sheram [github](https://github.com/tgsher9329) [linkedIn](https://www.linkedin.com/in/tucker-sheram-060a59204/)
+* Matt Chaleski [github](https://github.com/MattChale123) [linkedIn](https://www.linkedin.com/in/matt-chaleski-90ab701b8/)
+* Michael Moore [github](https://github.com/michaelhmoore) [linkedIn](https://www.linkedin.com/in/michael-h-moore/)
+
+# Project Requirements
+## Technical Requirements
+* Implement a Responsive Design that works on Chrome, OSX, iOS devices, and Android devices.
+* Access at least 2 remote APIs
+* HTML is well structured
+* Javascript loads correctly and doesn't have any console errors
+
+## Workflow Requirements
+* Work in a group
+* Use agile methodolgy (daily standups)
+* Create a github repo
+  * Collaborate using PRs (Pull Requests), making sure to tag a reviewer for approval
+  * Reviewer must code review through Github and approve before the PR can be merged. If there are no comments, the code has spaghetti, or has difficult to read spots, code review didn't happen.
+* Use a feature tracking system, such as:
+  * Github Projects
+  * Trello
+
+
 # Spotify Accounts Authentication Examples
 
 This project contains basic demos showing the different OAuth 2.0 flows for [authenticating against the Spotify Web API](https://developer.spotify.com/web-api/authorization-guide/).
