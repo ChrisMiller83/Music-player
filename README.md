@@ -38,6 +38,20 @@
 * crated backend token authenication
 
 
+# Home Page
+The Home Page was created by Matt and Michael.  It takes a user input to find songs and gives a list of songs with the same name.  You can then listen to a 30 second track of one of the songs.  The project was supposed to be only a front-end project, however Matt had to make it a full front-end/back-end project in order for the api to correctly work.
+
+# About Page
+The About Page was created by Chris and Tucker.  Chris created the original format and template.  Tucker created the css styling and design.  Then each team member add an about paragraph about themselves.
+
+# The Contact Page
+The Contact Page was created by Chris.  Chris used bootstrap to create cards for each team member.  He cropped images of each team member and added them to the cards.  He then, added icons for github,  linkedIn, and Slack; then made each icon link to each team members github, linkedIn and Slack accounts.  Finally he added an email link to the contact button which opens an email page allowing the user to contact a team member via email.
+
+# The Weather Page
+The Weather Page was created by Tucker.  Tucker used the openweathermap api to generate a widget that gives the user the current weather conditions for the user's requested location.  
+
+
+
 
 # Spotify Accounts Authentication Examples
 
@@ -48,19 +62,6 @@ These examples cover:
 * Authorization Code flow
 * Client Credentials flow
 * Implicit Grant flow
-
-
-# Home Page
-The Home Page was created by Matt and Michael.  It takes a user input to find songs and gives a list of songs with the same name.  You can then listen to a 30 second track of one of the songs.  The project was supposed to be only a front-end project, but Matt had to make it a full front-end/back-end project in order for the api to correctly work.
-
-# About Page
-The About Page was created by Chris and Tucker.  Chris created the original format and template.  Tucker created the css styling and design.  Then each team member add an about paragraph about themselves.
-
-# The Contact Page
-The Contact Page was created by Chris.  Chris used bootstrap to create cards for each team member.  He cropped images of each team member and added them to the cards.  He then, added icons for github,  linkedIn, and Slack; then made each icon link to each team members github, linkedIn and Slack accounts.  Finally he added an email link to the contact button which opens an email page allowing the user to contact a team member via email.
-
-# The Weather Page
-The Weather Page was created by Tucker.  Tucker used the openweathermap api to generate a widget that gives the user the current weather conditions for the user's requested location.  
 
 
 ## Installation
