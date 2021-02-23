@@ -41,21 +41,18 @@ body {
 .search-row {
   width: 50%;
 }
-<<<<<<< HEAD
 .music-container {
   width: auto;
   margin: 5%;
   height: auto;
   background-image: none;
 }
-=======
 .onAir {
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
 
->>>>>>> 9446eb23eb6252d44c8c2eba6eb0ad02d1a8e6e0
 .result{
   padding: 20px;
   border: 2px solid black;
