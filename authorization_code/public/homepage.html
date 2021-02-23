@@ -1,93 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="homepage.css">
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+
     <title>Conclusive Coda</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/homepage.html">Conclusive Coda</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/homepage.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="/homepage.html">Conclusive Coda</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/homepage.html"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    
-    
     <form id="search-form" class="search-row">
       <div class="input-group">
         <span class="input-group-btn">
-          <input type="button" id="advanced-button" class="btn btn-default my-input-title" value="Advanced"/>
+          <!-- <input type="button" id="advanced-button" class="btn btn-default my-input-title" value="Advanced"/> -->
+          <label for="type">Search:</label>
         </span>
-        <input type="text" id="query" value="" class="form-control" placeholder="Type a song name"/>
+        <input
+          type="text"
+          id="query"
+          value=""
+          class="form-control"
+          placeholder="Type a song name"
+        />
         <span class="input-group-btn">
-          <input type="submit" id="search" class="btn btn-primary" value="Search"/>
+          <input
+            type="submit"
+            id="search"
+            class="btn btn-primary"
+            value="Search"
+          />
         </span>
       </div>
-      <div id="advanced-form" style="display:none">
+      <div id="advanced-form" style="display: none">
         <div class="input-group">
-          <span class="input-group-addon my-input-title" id="basic-addon3">Artist</span>
-          <input type="text" id="artist-query" value="" class="form-control" placeholder="Type the artist name"/>
+          <span class="input-group-addon my-input-title" id="basic-addon3"
+            >Artist</span
+          >
+          <input
+            type="text"
+            id="artist-query"
+            value=""
+            class="form-control"
+            placeholder="Type the artist name"
+          />
         </div>
         <div class="input-group">
-          <span class="input-group-addon my-input-title" id="basic-addon3">Album</span>
-          <input type="text" id="album-query" value="" class="form-control" placeholder="Type the album name"/>
+          <span class="input-group-addon my-input-title" id="basic-addon3"
+            >Album</span
+          >
+          <input
+            type="text"
+            id="album-query"
+            value=""
+            class="form-control"
+            placeholder="Type the album name"
+          />
         </div>
         <div class="input-group">
-          <span class="input-group-addon my-input-title" id="basic-addon3">Genre</span>
-          <input type="text" id="genre-query" value="" class="form-control" placeholder="Type the genre"/>
+          <span class="input-group-addon my-input-title" id="basic-addon3"
+            >Genre</span
+          >
+          <input
+            type="text"
+            id="genre-query"
+            value=""
+            class="form-control"
+            placeholder="Type the genre"
+          />
         </div>
         <div class="input-group">
-          <span class="input-group-addon my-input-title" id="basic-addon3">Year</span>
-          <input type="text" id="year-query" value="" class="form-control" placeholder="Type the year"/>
+          <span class="input-group-addon my-input-title" id="basic-addon3"
+            >Year</span
+          >
+          <input
+            type="text"
+            id="year-query"
+            value=""
+            class="form-control"
+            placeholder="Type the year"
+          />
         </div>
       </div>
     </form>
-    
-    <div class="music-container">
-      
-    </div>
-    
-    
 
+    <div class="music-container"></div>
 
-
-
-      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="homepage.js"></script>
     <script src="search.js"></script>
-</body>
-
+  </body>
 </html>
